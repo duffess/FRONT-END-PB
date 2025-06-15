@@ -8,6 +8,11 @@ import SingleProductPage from './pages/SingleProductPage';
 import CitiesPage from './pages/CitiesPage';
 import AboutUsPage from './pages/AboutUsPage';
 import NotFoundPage from './pages/NotFoundPage';
+import CookiePolicy from './pages/CookiePolicy';
+import LegalPage from './pages/LegalPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsPage from './pages/TermsPage';
+import WarrantyPage from './pages/WarrantyPage';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +39,26 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <AboutUsPage />,
+      },
+      {
+        path: 'legalpage',
+        element:<LegalPage/>
+      },
+      {
+        path: 'privacypolicy',
+        element:<PrivacyPolicy/>
+      },
+      {
+        path: 'termspage',
+        element:<TermsPage/>
+      },
+      {
+        path: 'warrantypage',
+        element:<WarrantyPage/>
+      },
+      {
+        path: 'cookiepolicy',
+        element:<CookiePolicy/>
       },
     ],
   },

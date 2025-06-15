@@ -19,7 +19,6 @@ const HomePage = () => {
 
   return (
     <div>
-      {/* Hero Section */}
       <section className="relative h-screen">
         <ImageSlider 
           images={heroSlides} 

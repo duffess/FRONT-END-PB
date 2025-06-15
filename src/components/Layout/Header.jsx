@@ -27,19 +27,16 @@ const Header = () => {
   };
 
   return (
-    <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'
-      }`}
-      role="banner"
-    >
+      <header 
+        className="fixed w-full z-50 bg-white shadow-md py-4 transition-all duration-300"
+        role="banner"
+      >
+
       <div className="container mx-auto px-4 flex justify-between items-center">
-        {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-black">
           VELORETTI
         </Link>
 
-        {/* Menu de navegação para desktop */}
         <nav className="hidden md:flex space-x-8" role="navigation" aria-label="Menu principal">
           <NavLink 
             to="/" 
@@ -55,7 +52,7 @@ const Header = () => {
               `text-sm font-medium ${isActive ? 'text-black' : 'text-gray-600 hover:text-black'}`
             }
           >
-            Products
+            Produtos
           </NavLink>
           <NavLink 
             to="/cities" 
@@ -63,7 +60,7 @@ const Header = () => {
               `text-sm font-medium ${isActive ? 'text-black' : 'text-gray-600 hover:text-black'}`
             }
           >
-            Cities
+            Cidades
           </NavLink>
           <NavLink 
             to="/about" 
@@ -71,7 +68,7 @@ const Header = () => {
               `text-sm font-medium ${isActive ? 'text-black' : 'text-gray-600 hover:text-black'}`
             }
           >
-            About Us
+            Sobre nós
           </NavLink>
         </nav>
 
@@ -105,7 +102,7 @@ const Header = () => {
               }
               onClick={() => setIsMenuOpen(false)}
             >
-              Products
+              Produtos
             </NavLink>
             <NavLink 
               to="/cities" 
@@ -114,7 +111,7 @@ const Header = () => {
               }
               onClick={() => setIsMenuOpen(false)}
             >
-              Cities
+              Cidades
             </NavLink>
             <NavLink 
               to="/about" 
@@ -123,7 +120,7 @@ const Header = () => {
               }
               onClick={() => setIsMenuOpen(false)}
             >
-              About Us
+              Sobre nós
             </NavLink>
           </div>
         </div>
