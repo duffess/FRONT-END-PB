@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
+  base: '/FRONT-END-PB/', // 👈 necessário para GitHub Pages
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -11,7 +12,6 @@ export default defineConfig({
     },
   },
   server: {
-    historyApiFallback: true, 
+    historyApiFallback: true,
   },
-});
-
+})
